@@ -365,6 +365,7 @@ footer ul {
   .burger {
     position: relative;
     display: block;
+    cursor: pointer;
   }
   .burger span {
     padding: 0.2rem 1.8rem;
@@ -397,44 +398,29 @@ footer ul {
     transition: transform 1s ease;
   }
 
-  .menu-check {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translate(5%, -50%);
-    width: 5rem;
-    height: 5rem;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 100;
-  }
-  .menu-check:checked + .nav-links {
+  .nav-open {
     transform: translateX(-100%);
   }
-  .menu-check:checked ~ .burger span {
-    background: #fff;
+  .toggle .line2 {
+    opacity: 0;
   }
 
-  .menu-check:checked ~ .burger span:nth-child(1) {
+  .toggle .line1 {
+    background: #fff;
     transform: rotateZ(45deg) translateY(300%);
     transition: 0.3s ease;
   }
-  .menu-check:checked ~ .burger span:nth-child(3) {
+  .toggle .line3 {
+    background: #fff;
     transform: rotateZ(-45deg) translateY(-300%);
     transition: 0.3s ease;
   }
-  .menu-check:checked ~ .burger span:nth-child(2) {
-    opacity: 0;
-  }
-  .menu-check ~ .burger span:nth-child(1) {
+
+  .line1 {
     transition: 0.3s ease;
   }
-  .menu-check ~ .burger span:nth-child(3) {
+  .line3 {
     transition: 0.3s ease;
-  }
-  .menu-check ~ .burger span:nth-child(2) {
-    opacity: 1;
   }
 
   /** Hero Section Mobile */
