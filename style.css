@@ -63,7 +63,7 @@ h5 {
 
 a {
   text-decoration: none;
-  color: var(--special-color);
+  color: rgb(0, 0, 0);
 }
 
 ul {
@@ -310,7 +310,7 @@ nav {
 }
 .form-wrapper input {
   display: block;
-  margin: 3rem 0;
+  margin: 5rem 0;
   background: var(--main-color);
   color: #fff;
   border: none;
