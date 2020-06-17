@@ -28,7 +28,7 @@ html {
   --header4: calc(2.4rem + 1vw); /* ? Fluid Type set with calc */
   --text: calc(1.5rem + 1vw); /* ? Fluid Type set with calc */
   --big: calc(6rem + 1vw); /* ? Fluid Type set with calc */
-  --special-color: #906272;
+  --special-color: rgb(144, 98, 114);
   --main-color: #414141;
   --gray-text: #525252;
   scroll-behavior: smooth;
@@ -80,6 +80,10 @@ ul {
 body {
   font-family: "Ruhl", sans-serif;
   animation: opening 1.2s ease-in-out;
+}
+
+.fixed {
+  position: fixed;
 }
 
 /* *Nav Section */
@@ -382,12 +386,12 @@ footer ul {
   }
 
   .nav-links a:hover {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(206, 142, 164, 0.9);
     color: var(--gray-text);
   }
 
   .nav-links {
-    background: rgb(65, 65, 65);
+    background: var(--special-color);
     width: 70vw;
     height: 50vh;
     margin-left: 30vw;
